@@ -35,4 +35,12 @@ router.post('/', upload.single('coverImage'), async (req, res) => {
      return res.redirect(`/blog/${blog._id}`);
 })
 
+router.get('/:id', async (req, res) => {
+     const blog = await Blog.findById(req.params.id).populate('createdBy')
+     return res.render('blog', {
+          blog,
+          user: req.user,
+     })
+})
+
 module.exports = router;
