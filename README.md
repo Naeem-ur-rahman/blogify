@@ -8,6 +8,8 @@ This project is designed to learn how to build a robust Node.js web application 
 - Comment functionality for interacting with blogs.
 - File upload feature for uploading files to the server.
 
+[Blogify Live Demo](https://blogify-nurs.up.railway.app/)
+
 ## Tech Stack
 
 **Client:** HTML, Bootstrap
